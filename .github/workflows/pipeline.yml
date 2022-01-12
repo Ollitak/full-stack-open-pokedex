@@ -34,4 +34,9 @@ jobs:
           heroku_app_name: "full-stack-open-pokedex-ot"
           heroku_email: "olli.takaanttila@gmail.com"
           healthcheck: "https://full-stack-open-pokedex-ot.herokuapp.com/health"
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
+
+
+
 
