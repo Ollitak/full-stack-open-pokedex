@@ -1,18 +1,18 @@
-name: Periodic health check
+#name: Periodic health check
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'
+#on:
+#  schedule:
+#    - cron: '*/5 * * * *'
 
-jobs:
-  periodic_health_check:
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Check the deployed service URL
-        uses: jtalk/url-health-check-action@v2
-        with:
-          url: https://full-stack-open-pokedex-ot.herokuapp.com/
-          follow-redirect: false # Optional, defaults to "false"
-          max-attempts: 3
-          retry-delay: 5s 
-          retry-all: false
+#jobs:
+#  periodic_health_check:
+#    runs-on: ubuntu-18.04
+#    steps:
+#      - name: Check the deployed service URL
+#        uses: jtalk/url-health-check-action@v2
+#        with:
+#          url: https://full-stack-open-pokedex-ot.herokuapp.com/
+#          follow-redirect: false # Optional, defaults to "false"
+#          max-attempts: 3
+#          retry-delay: 5s 
+#          retry-all: false
